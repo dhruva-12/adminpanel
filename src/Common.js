@@ -3,6 +3,8 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Forgot from './Forgot';
 import ListingAll from './ListingAll';
+import Blog_add from './Blog_add';
+import Blog_all from './Blog_all';
 
 
 

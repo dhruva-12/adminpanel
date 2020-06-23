@@ -5,6 +5,8 @@ import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
 import Routes from './Routes';
+import Drop from './Drop';
+import Notifysearch from './Notifysearch';
 
 export default class Ui_kit extends  Component{
   render() {
@@ -16,55 +18,8 @@ export default class Ui_kit extends  Component{
         <div className="container-fluid sb1">
           <div className="row">
             {/*== LOGO ==*/}
-            <div className="col-md-2 col-sm-3 col-xs-6 sb1-1">
-              <a href="#" className="btn-close-menu"><i className="fa fa-times" aria-hidden="true" /></a>
-              <a href="#" className="atab-menu"><i className="fa fa-bars tab-menu" aria-hidden="true" /></a>
-              <a href="index.js" className="logo"><img src="images/logo1.png" alt="" />
-              </a>
-            </div>
-            {/*== SEARCH ==*/}
-            <div className="col-md-6 col-sm-6 mob-hide">
-              <form className="app-search">
-                <input type="text" placeholder="Search..." className="form-control" />
-                <a href><i className="fa fa-search" /></a>
-              </form>
-            </div>
-            {/*== NOTIFICATION ==*/}
-            <div className="col-md-2 tab-hide">
-              <div className="top-not-cen">
-                <a className="waves-effect btn-noti" href="#"><i className="fa fa-commenting-o" aria-hidden="true" /><span>5</span></a>
-                <a className="waves-effect btn-noti" href="#"><i className="fa fa-envelope-o" aria-hidden="true" /><span>5</span></a>
-                <a className="waves-effect btn-noti" href="#"><i className="fa fa-tag" aria-hidden="true" /><span>5</span></a>
-              </div>
-            </div>
-            {/*== MY ACCCOUNT ==*/}
-            <div className="col-md-2 col-sm-3 col-xs-6">
-              {/* Dropdown Trigger */}
-              <a className="waves-effect dropdown-button top-user-pro" href="#" data-activates="top-menu"><img src="images/user/6.png" alt="" />My Account <i className="fa fa-angle-down" aria-hidden="true" />
-              </a>
-              {/* Dropdown Structure */}
-              <ul id="top-menu" className="dropdown-content top-menu-sty">
-                <li><a href="setting.js" className="waves-effect"><i className="fa fa-cogs" aria-hidden="true" />Admin Setting</a>
-                </li>
-                <li><a href="listing-all.js" className="waves-effect"><i className="fa fa-list-ul" aria-hidden="true" /> Listings</a>
-                </li>
-                <li><a href="hotel-all.js" className="waves-effect"><i className="fa fa-building-o" aria-hidden="true" /> Hotels</a>
-                </li>
-                <li><a href="package-all.js" className="waves-effect"><i className="fa fa-umbrella" aria-hidden="true" /> Tour Packages</a>
-                </li>
-                <li><a href="event-all.js" className="waves-effect"><i className="fa fa-flag-checkered" aria-hidden="true" /> Events</a>
-                </li>
-                <li><a href="offers.js" className="waves-effect"><i className="fa fa-tags" aria-hidden="true" /> Offers</a>
-                </li>
-                <li><a href="user-add.js" className="waves-effect"><i className="fa fa-user-plus" aria-hidden="true" /> Add New User</a>
-                </li>
-                <li><a href="#" className="waves-effect"><i className="fa fa-undo" aria-hidden="true" /> Backup Data</a>
-                </li>
-                <li className="divider" />
-                <li><a href="#" className="ho-dr-con-last waves-effect"><i className="fa fa-sign-in" aria-hidden="true" /> Logout</a>
-                </li>
-              </ul>
-            </div>
+            <Notifysearch></Notifysearch>
+           <Drop></Drop>
           </div>
         </div>
         {/*== BODY CONTNAINER ==*/}

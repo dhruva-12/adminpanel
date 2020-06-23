@@ -1,4 +1,5 @@
 {
+  "homepage": "http://dhruva-12.github.io/admin",
   "name": "msgg",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "websocket": "^1.0.31"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "react-bootstrap": "^1.0.1"
   }
 }
