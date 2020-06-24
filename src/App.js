@@ -1,954 +1,152 @@
-import React, { Component } from 'react';
-import './css/style.css';
-//import { BrowserRouter as Router, Link } from 'react-router-dom'
-import './css/materialize.css';
-import './css/mob.css';
-import './css/bootstrap.css';
-import './Common.js';
-import { Link } from "react-router-dom";
-import Routes from './Routes';
-import Drop from './Drop';
-import Notifysearch from './Notifysearch';
-import Bottom from './Bottom';
-//import { Routes} from ".";
+import React from 'react';
+import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Forgot from './Forgot';
+import ListingAll from './ListingAll';
+import Listingadd from './Listingadd';
+ import Listing_cat_edit from './Listing_cat_edit';
+import Listing_cat_all from './Listing_cat_all';
+import Listing_cat_add from './Listing_cat_add';
+import Login from './Login';
 
-//import { Link, Router } from 'react-router-dom';
-class App extends Component {
-  render() {
-    return (
-      
-          
-            <div>
-              
-              {/*== MAIN CONTRAINER ==*/}
-              <div className="container-fluid sb1">
-                <div className="row">
-                  <Notifysearch></Notifysearch>
-                  <Drop></Drop>
-                </div>
-              </div>
-              {/*== BODY CONTNAINER ==*/}
-              <div className="container-fluid sb2">
-                <div className="row">
-                  <div className="sb2-1">
-                    {/*== USER INFO ==*/}
-                    
-                    {/*== LEFT MENU ==*/}
-                   <Routes></Routes>
-                  </div>
-                  {/*== BODY INNER CONTAINER ==*/}
-                  <div className="sb2-2">
-                    {/*== breadcrumbs ==*/}
-                    <div className="sb2-2-2">
-                      <ul>
-                        <li><a href="index.js"><i className="fa fa-home" aria-hidden="true" /> Home</a>
-                        </li>
-                        <li className="active-bre"><a href="#"> Dashboard</a>
-                        </li>
-                        <li className="page-back"><a href="index.js"><i className="fa fa-backward" aria-hidden="true" /> Back</a>
-                        </li>
-                      </ul>
-                    </div>
-                    {/*== DASHBOARD INFO ==*/}
-                    <div className="ad-v2-hom-info">
-                      <div className="ad-v2-hom-info-inn">
-                        <ul>
-                          <li>
-                            <div className="ad-hom-box ad-hom-box-1">
-                              <span className="ad-hom-col-com ad-hom-col-1"><i className="fa fa-bar-chart" /></span>
-                              <div className="ad-hom-view-com">
-                                <p><i className="fa  fa-arrow-up up" /> Today Views</p>
-                                <h3>22,520</h3>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="ad-hom-box ad-hom-box-2">
-                              <span className="ad-hom-col-com ad-hom-col-2"><i className="fa fa-usd" /></span>
-                              <div className="ad-hom-view-com">
-                                <p><i className="fa  fa-arrow-up up" /> Earnings</p>
-                                <h3>22,520</h3>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="ad-hom-box ad-hom-box-3">
-                              <span className="ad-hom-col-com ad-hom-col-3"><i className="fa fa-address-card-o" /></span>
-                              <div className="ad-hom-view-com">
-                                <p><i className="fa  fa-arrow-up up" /> Users</p>
-                                <h3>22,520</h3>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="ad-hom-box ad-hom-box-4">
-                              <span className="ad-hom-col-com ad-hom-col-4"><i className="fa fa-envelope-open-o" /></span>
-                              <div className="ad-hom-view-com">
-                                <p><i className="fa  fa-arrow-up up" /> Enquiry</p>
-                                <h3>22,520</h3>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="sb2-2-3">
-                      <div className="row">
-                        {/*== Country Campaigns ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Country Campaigns</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dropdown1"><i className="material-icons">more_vert</i></a>
-                              {/* Dropdown Structure */}
-                              <ul id="dropdown1" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>Country</th>
-                                      <th>Client</th>
-                                      <th>Changes</th>
-                                      <th>Budget</th>
-                                      <th>Status</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Australia</span>
-                                      </td>
-                                      <td>Beavis</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>2.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$1478</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">Active</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Cuba</span>
-                                      </td>
-                                      <td>Felix</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>1.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$951</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">Closed</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">France</span>
-                                      </td>
-                                      <td>Cannibus</td>
-                                      <td><span className="txt-danger"><i className="fa fa-angle-up" aria-hidden="true" /><span>-8.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$632</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-default">Hold</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Norway</span>
-                                      </td>
-                                      <td>Neosoft</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>7.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$325</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-default">Hold</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">South Africa</span>
-                                      </td>
-                                      <td>Hencework</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>9.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span>$258</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">Active</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/*== Country Campaigns ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Country Campaigns</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dropdown2"><i className="material-icons">more_vert</i></a>
-                              {/* Dropdown Structure */}
-                              <ul id="dropdown2" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>State</th>
-                                      <th>Client</th>
-                                      <th>Changes</th>
-                                      <th>Budget</th>
-                                      <th>Status</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">California</span>
-                                      </td>
-                                      <td>Beavis</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>2.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$1478</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">Active</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Florida</span>
-                                      </td>
-                                      <td>Felix</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>1.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$951</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">Closed</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Hawaii</span>
-                                      </td>
-                                      <td>Cannibus</td>
-                                      <td><span className="txt-danger"><i className="fa fa-angle-up" aria-hidden="true" /><span>-8.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$632</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-default">Hold</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">Alaska</span>
-                                      </td>
-                                      <td>Neosoft</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>7.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span className="txt-dark weight-500">$325</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-default">Hold</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="txt-dark weight-500">New Jersey</span>
-                                      </td>
-                                      <td>Hencework</td>
-                                      <td><span className="txt-success"><i className="fa fa-angle-up" aria-hidden="true" /><span>9.43%</span></span>
-                                      </td>
-                                      <td>
-                                        <span>$258</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">Active</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/*== User Details ==*/}
-                    <div className="sb2-2-3">
-                      <div className="row">
-                        <div className="col-md-12">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>User Details</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-users" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>User</th>
-                                      <th>Name</th>
-                                      <th>Phone</th>
-                                      <th>Email</th>
-                                      <th>Country</th>
-                                      <th>Listings</th>
-                                      <th>Enquiry</th>
-                                      <th>Bookings</th>
-                                      <th>Reviews</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/user/1.png" alt="" /></span>
-                                      </td>
-                                      <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
-                                      </td>
-                                      <td>+01 3214 6522</td>
-                                      <td>chadengle@dummy.com</td>
-                                      <td>Australia</td>
-                                      <td>
-                                        <span className="label label-primary">02</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">12</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-info">36</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/user/2.png" alt="" /></span>
-                                      </td>
-                                      <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
-                                      </td>
-                                      <td>+01 3214 6522</td>
-                                      <td>chadengle@dummy.com</td>
-                                      <td>Australia</td>
-                                      <td>
-                                        <span className="label label-primary">02</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">12</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-info">36</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/user/3.png" alt="" /></span>
-                                      </td>
-                                      <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
-                                      </td>
-                                      <td>+01 3214 6522</td>
-                                      <td>chadengle@dummy.com</td>
-                                      <td>Australia</td>
-                                      <td>
-                                        <span className="label label-primary">02</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">12</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-info">36</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/user/4.png" alt="" /></span>
-                                      </td>
-                                      <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
-                                      </td>
-                                      <td>+01 3214 6522</td>
-                                      <td>chadengle@dummy.com</td>
-                                      <td>Australia</td>
-                                      <td>
-                                        <span className="label label-primary">02</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">12</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-info">36</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/user/5.png" alt="" /></span>
-                                      </td>
-                                      <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
-                                      </td>
-                                      <td>+01 3214 6522</td>
-                                      <td>chadengle@dummy.com</td>
-                                      <td>Australia</td>
-                                      <td>
-                                        <span className="label label-primary">02</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-danger">12</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                      <td>
-                                        <span className="label label-info">36</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="sb2-2-3">
-                      <div className="row">
-                        {/*== Listing Enquiry ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Listing Enquiry</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-listings"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-listings" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>Select</th>
-                                      <th>Listing</th>
-                                      <th>Name</th>
-                                      <th>Date</th>
-                                      <th>City</th>
-                                      <th>Enquiry</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" className="filled-in" id="filled-in-box-1" defaultChecked="checked" />
-                                        <label htmlFor="filled-in-box-1" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Taaj Club House</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>12 may</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">15</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" className="filled-in" id="filled-in-box-2" defaultChecked="checked" />
-                                        <label htmlFor="filled-in-box-2" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/2.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Grand Hotel</span><span className="list-enq-city">Rio,Brazil</span>
-                                      </td>
-                                      <td>07 aug</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">05</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" className="filled-in" id="filled-in-box-3" defaultChecked="checked" />
-                                        <label htmlFor="filled-in-box-3" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/3.jpg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Grand Pales</span><span className="list-enq-city">Chennai,India</span>
-                                      </td>
-                                      <td>18 jun</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">35</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" className="filled-in" id="filled-in-box-4" />
-                                        <label htmlFor="filled-in-box-4" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/4.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Lake Palace Hotel</span><span className="list-enq-city">Beijing,China</span>
-                                      </td>
-                                      <td>09 apr</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" className="filled-in" id="filled-in-box-5" />
-                                        <label htmlFor="filled-in-box-5" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/5.jpg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">First Class Hotel</span><span className="list-enq-city">Berlin,Germany</span>
-                                      </td>
-                                      <td>21 jun</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">18</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/*== Hotel Bookings ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Hotel Bookings</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-hotel"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-hotel" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>Select</th>
-                                      <th>Listing</th>
-                                      <th>Name</th>
-                                      <th>Date</th>
-                                      <th>City</th>
-                                      <th>Enquiry</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" id="ch2-1" />
-                                        <label htmlFor="ch2-1" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Taaj Club House</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>12 may</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">15</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" id="ch2-2" />
-                                        <label htmlFor="ch2-2" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/2.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Grand Hotel</span><span className="list-enq-city">Rio,Brazil</span>
-                                      </td>
-                                      <td>07 aug</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">05</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" id="ch2-3" />
-                                        <label htmlFor="ch2-3" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/3.jpg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Grand Pales</span><span className="list-enq-city">Chennai,India</span>
-                                      </td>
-                                      <td>18 jun</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">35</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" id="ch2-4" />
-                                        <label htmlFor="ch2-4" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/4.jpeg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Lake Palace Hotel</span><span className="list-enq-city">Beijing,China</span>
-                                      </td>
-                                      <td>09 apr</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">24</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input type="checkbox" id="ch2-5" />
-                                        <label htmlFor="ch2-5" />
-                                      </td>
-                                      <td><span className="list-img"><img src="images/listing/5.jpg" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">First Class Hotel</span><span className="list-enq-city">Berlin,Germany</span>
-                                      </td>
-                                      <td>21 jun</td>
-                                      <td>Hawaii</td>
-                                      <td>
-                                        <span className="label label-success">18</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/*== Latest Activity ==*/}
-                    <div className="sb2-2-3">
-                      <div className="row">
-                        {/*== Latest Activity ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Latest Activity</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-activ"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-activ" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn list-act-hom">
-                              <ul>
-                                <li className="list-act-hom-con">
-                                  <i className="fa fa-clock-o" aria-hidden="true" />
-                                  <h4><span>12 may, 2017</span> Arrival and Evening Dhow Cruise</h4>
-                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </li>
-                                <li className="list-act-hom-con">
-                                  <i className="fa fa-clock-o" aria-hidden="true" />
-                                  <h4><span>08 Jun, 2017</span> City Tour and Evening Free</h4>
-                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </li>
-                                <li className="list-act-hom-con">
-                                  <i className="fa fa-clock-o" aria-hidden="true" />
-                                  <h4><span>27 July, 2017</span> Desert Safari with Dinner</h4>
-                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </li>
-                                <li className="list-act-hom-con">
-                                  <i className="fa fa-clock-o" aria-hidden="true" />
-                                  <h4><span>14 Aug, 2017</span> Day at leisure</h4>
-                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </li>
-                                <li className="list-act-hom-con">
-                                  <i className="fa fa-clock-o" aria-hidden="true" />
-                                  <h4><span>24 Sep, 2017</span> Departure</h4>
-                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        {/*== Social Media ==*/}
-                        <div className="col-md-6">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Social Media</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-social"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-social" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi">
-                                <table className="table table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th>Media</th>
-                                      <th>Name</th>
-                                      <th>Share</th>
-                                      <th>Like</th>
-                                      <th>Members</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/1.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Linked In</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/2.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Twitter</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/3.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Facebook</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/4.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Google Plus</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/5.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">YouTube</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/6.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">WhatsApp</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/7.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">VK</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><span className="list-img"><img src="images/sm/2.png" alt="" /></span>
-                                      </td>
-                                      <td><span className="list-enq-name">Twitter</span><span className="list-enq-city">Illunois, United States</span>
-                                      </td>
-                                      <td>15K</td>
-                                      <td>18K</td>
-                                      <td>
-                                        <span className="label label-success">263</span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/*== User Details ==*/}
-                    <div className="sb2-2-3">
-                      <div className="row">
-                        <div className="col-md-12">
-                          <div className="box-inn-sp">
-                            <div className="inn-title">
-                              <h4>Google Map</h4>
-                              <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                              <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-map"><i className="material-icons">more_vert</i></a>
-                              <ul id="dr-map" className="dropdown-content">
-                                <li><a href="#!">Add New</a>
-                                </li>
-                                <li><a href="#!">Edit</a>
-                                </li>
-                                <li><a href="#!">Update</a>
-                                </li>
-                                <li className="divider" />
-                                <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">subject</i>View All</a>
-                                </li>
-                                <li><a href="#!"><i className="material-icons">play_for_work</i>Download</a>
-                                </li>
-                              </ul>
-                              {/* Dropdown Structure */}
-                            </div>
-                            <div className="tab-inn">
-                              <div className="table-responsive table-desi tab-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6290413.804893654!2d-93.99620524741552!3d39.66116578737809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois%2C+USA!5e0!3m2!1sen!2sin!4v1469954001005" allowFullScreen />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/*== BOTTOM FLOAT ICON ==*/}
-             <Bottom></Bottom>
-              {/*======== SCRIPT FILES =========*/}
-            </div>
-          );
-        }
+import Blog_add from './Blog_add';
+import Blog_all from './Blog_all';
+import Discount from'./Discount';
+import Discount_add from './Discount_add';
+import Home from './Home';
+import Discount_edit from './Discount_edit';
+import Drop from './Drop';
+import Event_add from './Event_add';
+import Bottom from './Bottom';
+
+
+import User_view from './User_view';
+import User_edit from './User_edit';
+import Userall from './Userall';
+import User_add from './User_add';
+
+import Ui_table from './Ui_table';
+import Ui_temp from './Ui_temp';
+import Ui_tab from './Ui_tab';
+import Ui_preload from './Ui_preload';
+import Ui_kit from './Ui_kit';
+import Ui_icons from './Ui_icons';
+import Ui_form from './Ui_form';
+import Ui_collapse from './Ui_collapse';
+
+
+
+import Social_media from './Social_media';
+import Sight_see_edit from './Sight_see_edit';
+import Sight_see_add from './Sight_see_add';
+import Sight_see_all from './Sight_see_all';
+import Sight_see_booking_all from './Sight_see_booking_all';
+import Sight_see_booking_view from './Sight_see_booking_view';
+
+import Offers from './Offers';
+import Offers_Edit from './Offers_Edit';
+import Offers_add from './Offers_add';
+import Package_add from './Package_add';
+import Package_all  from './Package_all';
+import Package_booking_view from './Package_booking_view';
+import Package_cat_add from './Package_cat_add';
+import Package_cat_all from './Package_cat_all';
+import Package_cat_edit from './Package_cat_edit';
+import Package_edit from './Package_edit';
+import Hotel_add from './Hotel_add';
+import Hotel_all from './Hotel_all';
+import Hotel_booking_all from './Hotel_booking_all';
+import Hotel_edit from './Hotel_edit';
+import Hotel_room_type_add from './Hotel_room_type_add';
+import Hotel_room_type_all from './Hotel_room_type_all';
+import Hotel_room_type_edit from './Hotel_room_type_edit';
+import Event_all from './Event_all';
+import Event_booking_all from './Event_booking_all';
+import Event_booking_view from './Event_booking_view';
+import Event_edit from './Event_edit';
+import Setting from './Setting';
+import Listing_edit from './Listing_edit';
+
+
+
+
+
+function App() {
+  return (
+    <>
+
+      <Switch>
+         <Route exact path='/' component={Home} />
+        
+        <Route exact path='/ListingAll' component={ListingAll}/>
+        <Route exact path='/Listingadd' component={Listingadd}/>
+        <Route exact path='/Listingedit' component={Listing_edit}/>
+        <Route exact path='/Listingcatedit' component={Listing_cat_edit}/>
+        <Route exact path='/Listingcatall' component={Listing_cat_all}/>
+        <Route exact path='/Listingcatadd' component={Listing_cat_add}/>
+        <Route exact path='./login' component={Login}/>
+
+
+           
+        <Route exact  path='./Drop'    component ={ Drop}/>
+        <Route exact path ='./Discount_add' component={Discount_add}/>
+        <Route exact path ='./Discount' component={Discount}/>
+         <Route exact path ='./Discount_edit' component={Discount_edit}/>
+
+        <Route exact path='./Blogadd' component={Blog_add}/>
+        <Route exact path='./Blog_all' component={Blog_all}/>
+        <Route exact path='./Bottom' component={Bottom}/>
+       
+
+        <Route exact path='./Offers' component={Offers}/>
+        <Route exact path='./Offers_add' component={Offers_add}/>
+        <Route exact path='./Offers_Edit' component={Offers_Edit}/>
+        <Route exact path='./Package_add' component={Package_add}/>
+        <Route exact path='./Package_all' component={Package_all}/>
+        <Route exact path='./Package_booking_view' component={Package_booking_view}/>
+        <Route exact path='./Package_cat_add' component={Package_cat_add}/>
+        <Route exact path='./Package_cat_all' component={Package_cat_all}/>
+        <Route exact path='./Package_cat_edit' component={Package_cat_edit}/>
+        <Route exact path='./Package_edit' component={Package_edit}/>
+        <Route exact path='./Hotel_add' component={Hotel_add}/>
+        <Route exact path='./Hotel_all' component={Hotel_all}/>
+        <Route exact path='./Hotel_booking_all' component={Hotel_booking_all}/>
+        <Route exact path='./Hotel_edit' component={Hotel_edit}/>
+        <Route exact path='./Hotel_room_type_add' component={Hotel_room_type_add}/>
+        <Route exact path='./Hotel_room_type_all' component={Hotel_room_type_all}/>
+        <Route exact path='./Hotel_room_type_edit' component={Hotel_room_type_edit}/>
+
+        <Route exact path='./Event_add' component={Event_add}/>
+        <Route exact path='./Event_all' component={Event_all}/>
+        <Route exact path='./Event_booking_all' component={Event_booking_all}/>
+        <Route exact path='./Event_booking_view' component={Event_booking_view}/>
+        <Route exact path='./Event_edit' component={Event_edit}/>
+        <Route exact path='./Forgot' component={Forgot}/>
+        
+        <Route exact path='./Setting' component={Setting}/>
+        <Route exact path='./Sight_see_add' component={Sight_see_add}/>
+        <Route exact path='./Sight_see_all' component={Sight_see_all}/>
+        <Route exact path='./Sight_see_booking_all' component={Sight_see_booking_all}/>
+        <Route exact path='./Sight_see_booking_view' component={Sight_see_booking_view}/>
+        <Route exact path='./Sight_see_edit' component={Sight_see_edit}/>
+        <Route exact path='./Social_media' component={Social_media}/>
+
+        <Route exact path='./Ui_collapse' component={Ui_collapse}/>
+        <Route exact path='./Uiform' component={Ui_form}/>
+        <Route exact path='./Ui_icons' component={Ui_icons}/>
+        <Route exact path='./Ui_kit' component={Ui_kit}/>
+         <Route exact path='./Ui_preload' component={Ui_preload}/>
+        <Route exact path='./Ui_tab' component={Ui_tab}/>
+        <Route exact path='./Ui_table' component={Ui_table}/>
+        <Route exact path='./Ui_temp' component={Ui_temp}/>
+        <Route exact path='./User_add' component={User_add}/>
+        <Route exact path='./Userall' component={Userall}/>
+        <Route exact path='./User_edit' component={User_edit}/>
+        <Route exact path='./User_view' component={User_view}/>
+      </Switch>
+
+    </>
+  );
 }
 
-    
-
-
 export default App;
-

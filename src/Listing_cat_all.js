@@ -7,9 +7,10 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Listing_cat_all = React.createClass({
-  render: function() {
+export default class  Listing_cat_all extends Component{
+  render() {
     return (
       <div>
         
@@ -24,14 +25,14 @@ var Listing_cat_all = React.createClass({
           <div className="row">
             <div className="sb2-1">
               {/*== USER INFO ==*/}
-              <div className="sb2-12">
-                <ul>
+              
+                
                   
                   <Routes></Routes>
 
 
-                </ul>
-              </div>
+                
+              
               
             </div>
             <div className="sb2-2">
@@ -164,4 +165,4 @@ var Listing_cat_all = React.createClass({
       </div>
     );
   }
-});
+}

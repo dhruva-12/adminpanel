@@ -7,9 +7,10 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Hotel_room_type_all = React.createClass({
-  render: function() {
+export default class Hotel_room_type_all extends Component{
+  render() {
     return (
       <div>
         
@@ -153,4 +154,4 @@ var Hotel_room_type_all = React.createClass({
       </div>
     );
   }
-});
+}

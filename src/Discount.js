@@ -8,8 +8,9 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
-var Discount = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class Discount extends Component{
+  render() {
     return (
       <div>
         
@@ -85,7 +86,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -100,7 +101,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -115,7 +116,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -130,7 +131,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -145,7 +146,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -160,7 +161,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -175,7 +176,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -190,7 +191,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -205,7 +206,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -220,7 +221,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -235,7 +236,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -250,7 +251,7 @@ var Discount = React.createClass({
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="discount-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <a href="discount-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
                                 </td>
                                 <td>
                                   <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
@@ -269,8 +270,8 @@ var Discount = React.createClass({
         </div>
         {/*== BOTTOM FLOAT ICON ==*/}
       <Bottom></Bottom>
-        {/*======== SCRIPT FILES =========*/}
+        
       </div>
     );
   }
-});
+}

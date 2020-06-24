@@ -9,8 +9,8 @@ import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
 
-var Listing_edit = React.createClass({
-  render: function() {
+export default class Listing_edit extends Component{
+  render() {
     return (
       <div>
         
@@ -365,4 +365,4 @@ var Listing_edit = React.createClass({
       </div>
     );
   }
-});
+}

@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 import './css/style.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+
+//import { BrowserRouter as Router, Link } from 'react-router-dom'
 import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
@@ -141,9 +142,9 @@ export default class Ui_form extends Component{
             </div>
           </div>
         </div>
-        {/*== BOTTOM FLOAT ICON ==*/}
+        
         <Bottom></Bottom>
-        {/*======== SCRIPT FILES =========*/}
+
       </div>
     );
   }

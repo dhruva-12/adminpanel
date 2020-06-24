@@ -8,8 +8,9 @@ import './css/bootstrap.css';
 import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
-var Hotel_booking_all = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class Hotel_booking_all extends Component{
+  render() {
     return (
       <div>
         
@@ -209,4 +210,4 @@ var Hotel_booking_all = React.createClass({
       </div>
     );
   }
-});
+}

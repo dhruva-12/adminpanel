@@ -8,8 +8,9 @@ import './css/bootstrap.css';
 import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
-var Listing_add = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class Listing_add extends Component{
+  render() {
     return (
       <div>
         
@@ -25,7 +26,7 @@ var Listing_add = React.createClass({
           <div className="row">
             <div className="sb2-1">
              
-              
+            <Routes></Routes>  
             </div>
             <div className="sb2-2">
               <div className="sb2-2-2">
@@ -363,4 +364,4 @@ var Listing_add = React.createClass({
       </div>
     );
   }
-});
+}

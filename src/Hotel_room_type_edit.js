@@ -6,9 +6,10 @@ import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Hotel_room_type_edit = React.createClass({
-  render: function() {
+export default class  Hotel_room_type_edit extends Component{
+  render() {
     return (
       <div>
         
@@ -61,4 +62,4 @@ var Hotel_room_type_edit = React.createClass({
       </div>
     );
   }
-});
+}

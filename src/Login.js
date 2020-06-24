@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './css/style.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
-var Login= React.createClass({
-  render: function() {
+export default class Login extends Component{
+  render() {
     return (
       <div>
         
@@ -31,7 +31,7 @@ var Login= React.createClass({
                   <a className="waves-effect waves-light btn-large btn-log-in" href="index.html">Login</a>
                 </div>
               </div>
-              <a href="forgot.html" className="for-pass">Forgot Password?</a>
+              <Link to="Forgot" className="for-pass">Forgot Password?</Link>
             </form>
           </div>
         </div>
@@ -39,4 +39,4 @@ var Login= React.createClass({
       </div>
     );
   }
-});
+}

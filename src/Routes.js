@@ -21,16 +21,17 @@ class Routes extends Component {
 
     <li>
       
-      <Link to= "/listingAll"  className="collapsible-header"><i  className="fa fa-list-ul" aria-hidden="true"></i> Listing</Link>
-      <div className="collapsible-body left-sub-menu"><ul><li>All listing</li>
-         <li><Link to="Listing_add">Add New listing</Link></li>
+      <Link to= ""  className="collapsible-header"><i  className="fa fa-list-ul" aria-hidden="true"></i> Listing</Link>
+      <div className="collapsible-body left-sub-menu"><ul>
+        <li>All listing</li>
+         <li><Link to="Listingadd">Add New listing</Link></li>
         <li><Link to="Listing_cat_all ">All listing Categories</Link></li>
         <li><Link to="Listing_cat_add ">Add listing Categories</Link></li></ul></div></li>
     <li>
     <Link to="" className="panel-collapse collapse in"><i className="fa fa-user" aria-hidden="true"></i> Users</Link>
     <div className="collapsible-body left-sub-menu"><ul>
-    <li><Link to="User_all ">All Users</Link></li>
-    <li><Link to="User_add">Add New user</Link></li></ul></div></li>
+    <li><Link to="/Userall ">All Users</Link></li>
+    <li><Link to="/User_add">Add New user</Link></li></ul></div></li>
     <li>
       <Link to="" className="collapsible-header"><i className="fa fa-umbrella" aria-hidden="true"></i> Tour Packages</Link>
       <div className="collapsible-body left-sub-menu"><ul>
@@ -71,13 +72,12 @@ class Routes extends Component {
         <Link to="Discount">All Discounts</Link></li><li>
         <Link to="Discount_add">Add New Discounts</Link></li></ul></div></li>
     <li>
-      <Link to=""  className="collapsible-header"><i className="fa fa-tags" aria-hidden="true"></i> Offers</Link><div         className="collapsible-body left-sub-menu"><ul><li><Link to="offers    ">All Offers</Link></li>
+      <Link to=""  className="collapsible-header"><i className="fa fa-tags" aria-hidden="true"></i> Offers</Link><div className="collapsible-body left-sub-menu"><ul><li><Link to="offers    ">All Offers</Link></li>
     <li>
       <Link to="Offers_add">Add New Offers</Link></li></ul></div></li>
       <li
       ><Link to=""   className="collapsible-header"><i  className="fa fa-ticket" aria-hidden="true"></i> Booking &amp; Enquiry</Link><div         className="collapsible-body left-sub-menu"><ul>
-      <li>
-        <Link to="Hotel_booking_all">Hotel</Link></li>
+      <li> <Link to="Hotel_booking_all">Hotel</Link></li>
         <li><Link to="Package_booking_all">Package</Link></li>
         <li> <Link to="Sight_see_booking-all">Sight Seeings</Link></li>
         <li><Link to="event-booking-all">Events</Link></li></ul></div></li>

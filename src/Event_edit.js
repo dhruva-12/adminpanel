@@ -7,9 +7,10 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Event_edit = React.createClass({
-  render: function() {
+export default class  Event_edit extends Component{
+  render() {
     return (
       <div>
        
@@ -128,4 +129,4 @@ var Event_edit = React.createClass({
       </div>
     );
   }
-});
+}

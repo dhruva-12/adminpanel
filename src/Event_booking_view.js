@@ -7,8 +7,9 @@ import './css/bootstrap.css';
 import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
-var Event_booking_view = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class Event_booking_view extends Component{
+  render() {
     return (
       <div>
        
@@ -94,4 +95,4 @@ var Event_booking_view = React.createClass({
       </div>
     );
   }
-});
+}

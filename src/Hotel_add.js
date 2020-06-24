@@ -7,9 +7,10 @@ import './css/bootstrap.css';
 import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Hotel_add = React.createClass({
-  render: function() {
+export default class Hotel_add extends Component{
+  render() {
     return (
       <div>
        
@@ -17,7 +18,7 @@ var Hotel_add = React.createClass({
         {/*== MAIN CONTRAINER ==*/}
         <div className="container-fluid sb1">
           <div className="row">
-            {/*== LOGO ==*/}
+           
             
             <Notifysearch></Notifysearch>
             <Drop></Drop>
@@ -366,4 +367,4 @@ var Hotel_add = React.createClass({
       </div>
     );
   }
-});
+}

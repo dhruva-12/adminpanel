@@ -10,8 +10,8 @@ import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
 
-var Package_all = React.createClass({
-  render: function() {
+export default class Package_all extends Component{
+  render() {
     return (
       <div>
         
@@ -368,4 +368,4 @@ var Package_all = React.createClass({
       </div>
     );
   }
-});
+}

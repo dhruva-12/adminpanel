@@ -9,8 +9,8 @@ import Drop from './Drop';
 import Routes from './Routes';
 import Bottom from './Bottom';
 
-var offers = React.createClass({
-  render: function() {
+export default class Offers extends Component{
+  render() {
     return (
       <div>
         
@@ -275,4 +275,4 @@ var offers = React.createClass({
       </div>
     );
   }
-});
+}

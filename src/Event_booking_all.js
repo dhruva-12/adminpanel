@@ -8,8 +8,9 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
-var Event_booking_all = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class  Event_booking_all extends Component{
+  render() {
     return (
       <div>
         
@@ -209,4 +210,4 @@ var Event_booking_all = React.createClass({
       </div>
     );
   }
-});
+}

@@ -7,9 +7,9 @@ import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
 import Bottom from './Bottom';
-
-var Hotel_room_type_add = React.createClass({
-  render: function() {
+import Routes from './Routes';
+export default class Hotel_room_type_add extends Component{
+  render() {
     return (
       <div>
         
@@ -61,4 +61,4 @@ var Hotel_room_type_add = React.createClass({
       </div>
     );
   }
-});
+}

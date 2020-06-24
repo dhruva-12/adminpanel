@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import './css/style.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom'
@@ -10,7 +9,7 @@ import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
 
-export default class User_all extends Component{
+export default class Userall extends Component{
   render() {
     return (
       <div>
@@ -35,9 +34,9 @@ export default class User_all extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="#"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="#"><i className="fa fa-home" aria-hidden="true" /> Home</Link>
                   </li>
-                  <li className="active-bre"><a href="#"> Ui Form</a>
+                  <li className="active-bre"><Link to="#"> Ui Form</Link>
                   </li>
                 </ul>
               </div>
@@ -50,16 +49,16 @@ export default class User_all extends Component{
                         <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
                         <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i className="material-icons">more_vert</i></a>
                         <ul id="dr-users" className="dropdown-content">
-                          <li><a href="user-add.js">Add New</a>
+                          <li><Link to="user-add">Add New</Link>
                           </li>
-                          <li><a href="user-edit.js">Edit</a>
+                          <li><Link to="user-edit">Edit</Link>
                           </li>
-                          <li><a href="#!">Update</a>
+                          <li><Link to="#!">Update</Link>
                           </li>
                           <li className="divider" />
-                          <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
+                          <li><Link to="#!"><i className="material-icons">delete</i>Delete</Link>
                           </li>
-                          <li><a href="user-view.js"><i className="material-icons">subject</i>View All</a>
+                          <li><Link to="user-view"><i className="material-icons">subject</i>View All</Link>
                           </li>
                         </ul>
                         {/* Dropdown Structure */}
@@ -84,7 +83,7 @@ export default class User_all extends Component{
                               <tr>
                                 <td><span className="list-img"><img src="images/user/1.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -93,19 +92,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/2.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -114,19 +113,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/3.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -135,19 +134,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/4.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -156,19 +155,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/5.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -177,19 +176,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/6.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -198,19 +197,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/1.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -219,19 +218,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/2.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -240,19 +239,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/1.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -261,19 +260,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/3.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -282,19 +281,19 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/user/4.png" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Marsha Hogan</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>+01 3214 6522</td>
                                 <td>chadengle@dummy.com</td>
@@ -303,13 +302,13 @@ export default class User_all extends Component{
                                   <span className="label label-primary">02</span>
                                 </td>
                                 <td>
-                                  <a href="user-view.js"><i className="fa fa-eye" aria-hidden="true" /></a>
+                                  <Link to="user-view"><i className="fa fa-eye" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="user-edit.js"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="user-edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                             </tbody>
@@ -325,7 +324,7 @@ export default class User_all extends Component{
         </div>
         {/*== BOTTOM FLOAT ICON ==*/}
         <Bottom></Bottom>
-        {/*======== SCRIPT FILES =========*/}
+       
       </div>
     );
   }

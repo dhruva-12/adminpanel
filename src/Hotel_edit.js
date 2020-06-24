@@ -7,9 +7,11 @@ import './css/bootstrap.css';
 import Drop from './Drop';
 import Notifysearch from './Notifysearch';
 import Bottom from './Bottom';
+import Routes from './Routes';
 
-var Hotel_edit = React.createClass({
-  render: function() {
+
+export default class Hotel_edit extends Component{
+  render() {
     return (
       <div>
         
@@ -374,4 +376,4 @@ var Hotel_edit = React.createClass({
       </div>
     );
   }
-});
+}

@@ -7,9 +7,10 @@ import './css/mob.css';
 import './css/bootstrap.css';
 import Notifysearch from './Notifysearch';
 import Drop from './Drop';
+import Routes from './Routes';
 import Bottom from './Bottom';
-var Discount_edit = React.createClass({
-  render: function() {
+export default class Discount_edit extends Component{
+  render() {
     return (
       <div>
         
@@ -126,4 +127,4 @@ var Discount_edit = React.createClass({
       </div>
     );
   }
-});
+}

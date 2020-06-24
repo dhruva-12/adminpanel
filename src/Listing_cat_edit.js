@@ -9,8 +9,8 @@ import Drop from './Drop';
 import Routes from './Routes';
 import Bottom from './Bottom';
 
-var Listing_cat_edit = React.createClass({
-  render: function() {
+export default class Listing_cat_edit extends Component{
+  render() {
     return (
       <div>
         
@@ -63,4 +63,4 @@ var Listing_cat_edit = React.createClass({
       </div>
     );
   }
-});
+}
