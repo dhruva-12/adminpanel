@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
+import './js/custom.js';
+
+import Collapsible from 'react-collapsible';
+
 
 class Routes extends Component {
   render() {
+    
     return (
       
+
+
 <div className="sb2-1"><div  className="sb2-12"><ul>
 
   <li><img src="images/placeholder.jpg" alt=""/></li>
@@ -20,71 +27,100 @@ class Routes extends Component {
     </li>
 
     <li>
-      
-      <Link to= ""  className="collapsible-header"><i  className="fa fa-list-ul" aria-hidden="true"></i> Listing</Link>
-      <div className="collapsible-body left-sub-menu"><ul>
-        <li>All listing</li>
+    
+   
+      <Collapsible trigger={"Listing"}>
+      <ul>
+       
+        <li><Link to="ListingAll">All Listing</Link></li>
          <li><Link to="Listingadd">Add New listing</Link></li>
-        <li><Link to="Listing_cat_all ">All listing Categories</Link></li>
-        <li><Link to="Listing_cat_add ">Add listing Categories</Link></li></ul></div></li>
+        <li><Link to="Listingcatall ">All listing Categories</Link></li>
+        <li><Link to="Listingcatadd ">Add listing Categories</Link></li>
+        </ul>
+        </Collapsible></li>
+       
     <li>
-    <Link to="" className="panel-collapse collapse in"><i className="fa fa-user" aria-hidden="true"></i> Users</Link>
-    <div className="collapsible-body left-sub-menu"><ul>
+    <Collapsible trigger={"Users"}>
+    <ul>
     <li><Link to="/Userall ">All Users</Link></li>
-    <li><Link to="/User_add">Add New user</Link></li></ul></div></li>
+    <li><Link to="/User_add">Add New user</Link></li></ul>
+    </Collapsible>
+    </li>
     <li>
-      <Link to="" className="collapsible-header"><i className="fa fa-umbrella" aria-hidden="true"></i> Tour Packages</Link>
-      <div className="collapsible-body left-sub-menu"><ul>
+       <Collapsible trigger ={"Tour Packages"}>
+      <ul>
         <li><Link to="Package_all">All Packages</Link></li>
         <li><Link to="Package_add">Add New Package</Link></li>
         <li><Link to="Package_cat_all ">All Package Categories</Link></li>
-        <li><Link to="Package_cat_add ">Add Package Categories</Link></li></ul></div></li>
+        <li><Link to="Package_cat_add ">Add Package Categories</Link></li></ul>
+        </Collapsible></li>
     <li>
-      <Link to=""  className="collapsible-header"><i className="fa fa-h-square" aria-hidden="true"></i> Hotels</Link>
-    <div  className="collapsible-body left-sub-menu"><ul>
+       <Collapsible trigger={"Hotels"}>
+    <ul>
     <li><Link to="Hotel_all ">All   Hotels</Link></li>
     <li><Link to=" Hotel_add  ">Add New   Hotel</Link></li>
     <li><Link to=" Hotel_room_type_all">Room Type</Link></li>
-    <li><Link to=" Hotel_room_type_add  ">Add Room Type</Link></li></ul></div></li>
-    <li><Link to=""  className="collapsible-header">
-      <i className="fa fa-picture-o" aria-hidden="true"></i> Sight Seeings</Link>
-      <div className="collapsible-body left-sub-menu"><ul>
+    <li><Link to=" Hotel_room_type_add  ">Add Room Type</Link></li></ul>
+    </Collapsible></li>
+
+
     <li>
-      <Link to="Sight_see_all ">All Sight Seeings</Link></li>
+      <Collapsible trigger={"Sight Seeings"}>
+      <ul>
+    <li><Link to="Sight_see_all ">All Sight Seeings</Link></li>
+    <li><Link to="Sight_see_add ">Add New Sight Seeing</Link></li></ul>
+      </Collapsible></li>
+      
     <li>
-      <Link to="Sight_see_add ">Add New Sight Seeing</Link></li></ul></div></li>
-    <li>
-      <Link to=""  className="collapsible-header"><i  className="fa fa-calendar-o" aria-hidden="true"></i> Events</Link>
-      <div className="collapsible-body left-sub-menu"><ul>
+       <Collapsible trigger={"Events"}>
+      <ul>
         <li><Link to="Event_all">All Events</Link></li>
-      <li><Link to="Event_add">Add New Event</Link></li></ul></div></li>
+      <li><Link to="Event_add">Add New Event</Link></li></ul>
+      </Collapsible></li>
     <li>
-      <Link to=""  className="collapsible-header"><i className="fa fa-braille" aria-hidden="true"></i> Ui-Kits</Link><div         className="collapsible-body left-sub-menu"><ul>
-        <li><Link to="Ui_form">ui-form</Link></li>
-        <li><Link to="Ui_kit">ui-kit</Link></li>
-        <li><Link to="Ui_table">ui-table</Link></li>
+      <Collapsible trigger={"Ui-Kits"}>
+        <ul>
+        <li><Link to="Ui_form">Ui_form</Link></li>
+        <li><Link to="Ui_kit">Ui_kit</Link></li>
+        <li><Link to="Ui_table">Ui_table</Link></li>
+        <li><Link to ="Ui_pre_load">Ui_pre_load</Link></li>
+        <li><Link to="Ui_tab  ">Ui_tab</Link></li>
+        <li><Link to="Ui_icons  ">Ui_icons</Link></li>
+        <li><Link to="Ui_collapsible.">Ui_collapsible</Link></li></ul></Collapsible> </li>
+
+        
     <li>
-      <Link to ="Ui_pre_load">ui-pre-load</Link></li><li><Link to="ui-tab  ">ui-tab</Link></li>
+      <Collapsible trigger={"Discounts"}>
+        <ul>
+        <li><Link to="Discount">All Discounts</Link></li>
+        <li><Link to="Discount_add">Add New Discounts</Link></li></ul></Collapsible></li>
+
     <li>
-      <Link to="Ui_icons  ">ui-icons</Link></li><li><Link to="ui-collapsible.">ui-collapsible</Link></li></ul></div></li>
+      
+      <Collapsible trigger={"Offers_add"}>
+        <ul>
+       <li><Link to="offers ">All Offers</Link></li>
+      <li><Link to="Offers_add">Add New Offers</Link></li></ul></Collapsible>
+       </li>
+
     <li>
-      <Link to=""    className="collapsible-header"><i  className="fa fa-usd" aria-hidden="true"></i> Discounts</Link><div         className="collapsible-body left-sub-menu"><ul><li>
-        <Link to="Discount">All Discounts</Link></li><li>
-        <Link to="Discount_add">Add New Discounts</Link></li></ul></div></li>
-    <li>
-      <Link to=""  className="collapsible-header"><i className="fa fa-tags" aria-hidden="true"></i> Offers</Link><div className="collapsible-body left-sub-menu"><ul><li><Link to="offers    ">All Offers</Link></li>
-    <li>
-      <Link to="Offers_add">Add New Offers</Link></li></ul></div></li>
-      <li
-      ><Link to=""   className="collapsible-header"><i  className="fa fa-ticket" aria-hidden="true"></i> Booking &amp; Enquiry</Link><div         className="collapsible-body left-sub-menu"><ul>
+      <Collapsible trigger={"Booking"}>  <ul>
       <li> <Link to="Hotel_booking_all">Hotel</Link></li>
         <li><Link to="Package_booking_all">Package</Link></li>
         <li> <Link to="Sight_see_booking-all">Sight Seeings</Link></li>
-        <li><Link to="event-booking-all">Events</Link></li></ul></div></li>
-        <li><Link to=""  className="collapsible-header"><i className="fa fa-rss" aria-hidden="true"></i> Blog &amp; Articals</Link><div         className="collapsible-body left-sub-menu"><ul><li><Link to="blog-all    ">All Blogs</Link></li><li><Link to="blog-add    ">Add Blog</Link></li></ul></div></li>
+        <li><Link to="Event-booking-all">Events</Link></li></ul></Collapsible></li>
+
+<li>
+        <Collapsible trigger={"Blog"} > <ul>
+      <li><Link to="Blog_all ">All Blogs</Link></li>
+      <li><Link to="Blog_add ">Add Blog</Link></li></ul></Collapsible>  </li>
+
+
        <li> <Link to="Social_media"><i className="fa fa-plus-square-o" aria-hidden="true"></i> Social Media</Link></li>
 <li><Link to="Login" target="_blank"><i className="fa fa-sign-in" aria-hidden="true"></i> Login</Link></li>
-
+   
+      
+          
 </ul>
 </div></div>
             

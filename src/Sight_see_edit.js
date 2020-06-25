@@ -33,11 +33,11 @@ export default class Sight_see_edit extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="index.html"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="index.html"><i className="fa fa-home" aria-hidden="true" /> Home</Link> 
                   </li>
-                  <li className="active-bre"><a href="#"> Edit Sight Seeing</a>
+                  <li className="active-bre"><Link to="#"> Edit Sight Seeing</Link> 
                   </li>
-                  <li className="page-back"><a href="index.html"><i className="fa fa-backward" aria-hidden="true" /> Back</a>
+                  <li className="page-back"><Link to="index.html"><i className="fa fa-backward" aria-hidden="true" /> Back</Link> 
                   </li>
                 </ul>
               </div>

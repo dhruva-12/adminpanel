@@ -17,7 +17,7 @@ export default class Sight_see_booking_view extends Component{
          
           <div className="container-fluid sb1">
             <div className="row">
-              {/*== LOGO ==*/}
+              
               <Notifysearch></Notifysearch>
              <Drop></Drop>
             </div>

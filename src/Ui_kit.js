@@ -15,7 +15,7 @@ export default class Ui_kit extends  Component{
       <div>
         
 
-        {/*== MAIN CONTRAINER ==*/}
+        
         <div className="container-fluid sb1">
           <div className="row">
             {/*== LOGO ==*/}
@@ -23,7 +23,7 @@ export default class Ui_kit extends  Component{
            <Drop></Drop>
           </div>
         </div>
-        {/*== BODY CONTNAINER ==*/}
+        
         <div className="container-fluid sb2">
           <div className="row">
             <div className="sb2-1">

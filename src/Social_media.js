@@ -35,9 +35,9 @@ export default class Social_media extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="#"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="#"><i className="fa fa-home" aria-hidden="true" /> Home</Link>
                   </li>
-                  <li className="active"><a href="#"> Social Media</a>
+                  <li className="active"><Link to="#"> Social Media</Link>
                   </li>
                 </ul>
               </div>

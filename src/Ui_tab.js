@@ -12,10 +12,7 @@ export default class Ui_tab extends Component{
   render() {
     return (
       <div>
-        
-	
-	
-	
+        	
         {/*== MAIN CONTRAINER ==*/}
         <div className="container-fluid sb1">
           <div className="row">

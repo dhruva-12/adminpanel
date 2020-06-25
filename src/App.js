@@ -77,19 +77,13 @@ function App() {
         <Route exact path='/Listingcatall' component={Listing_cat_all}/>
         <Route exact path='/Listingcatadd' component={Listing_cat_add}/>
         <Route exact path='/Login' component={Login}/>
-
-
-           
         <Route exact  path='/Drop'    component ={Drop}/>
         <Route exact path ='/Discount_add' component={Discount_add}/>
         <Route exact path ='/Discount' component={Discount}/>
          <Route exact path ='/Discount_edit' component={Discount_edit}/>
-
-        <Route exact path='/Blogadd' component={Blog_add}/>
+        <Route exact path='/Blog_add' component={Blog_add}/>
         <Route exact path='/Blog_all' component={Blog_all}/>
         <Route exact path='/Bottom' component={Bottom}/>
-       
-
         <Route exact path='/Offers' component={Offers}/>
         <Route exact path='/Offers_add' component={Offers_add}/>
         <Route exact path='/Offers_Edit' component={Offers_Edit}/>
@@ -107,14 +101,12 @@ function App() {
         <Route exact path='/Hotel_room_type_add' component={Hotel_room_type_add}/>
         <Route exact path='/Hotel_room_type_all' component={Hotel_room_type_all}/>
         <Route exact path='/Hotel_room_type_edit' component={Hotel_room_type_edit}/>
-
         <Route exact path='/Event_add' component={Event_add}/>
         <Route exact path='/Event_all' component={Event_all}/>
         <Route exact path='/Event_booking_all' component={Event_booking_all}/>
         <Route exact path='/Event_booking_view' component={Event_booking_view}/>
         <Route exact path='/Event_edit' component={Event_edit}/>
         <Route exact path='/Forgot' component={Forgot}/>
-        
         <Route exact path='/Setting' component={Setting}/>
         <Route exact path='/Sight_see_add' component={Sight_see_add}/>
         <Route exact path='/Sight_see_all' component={Sight_see_all}/>
@@ -122,7 +114,6 @@ function App() {
         <Route exact path='/Sight_see_booking_view' component={Sight_see_booking_view}/>
         <Route exact path='/Sight_see_edit' component={Sight_see_edit}/>
         <Route exact path='/Social_media' component={Social_media}/>
-
         <Route exact path='/Ui_collapse' component={Ui_collapse}/>
         <Route exact path='/Uiform' component={Ui_form}/>
         <Route exact path='/Ui_icons' component={Ui_icons}/>

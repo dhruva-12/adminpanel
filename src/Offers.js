@@ -34,9 +34,9 @@ export default class Offers extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="#"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="#"><i className="fa fa-home" aria-hidden="true" /> Home</Link>
                   </li>
-                  <li className="active-bre"><a href="#"> Ui Form</a>
+                  <li className="active-bre"><Link to="#"> Ui Form</Link>
                   </li>
                 </ul>
               </div>
@@ -49,16 +49,16 @@ export default class Offers extends Component{
                         <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
                         <a className="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i className="material-icons">more_vert</i></a>
                         <ul id="dr-users" className="dropdown-content">
-                          <li><a href="#!">Add New</a>
+                          <li><Link to="#!">Add New</Link>
                           </li>
-                          <li><a href="#!">Edit</a>
+                          <li><Link to="#!">Edit</Link>
                           </li>
-                          <li><a href="#!">Update</a>
+                          <li><Link to="#!">Update</Link>
                           </li>
                           <li className="divider" />
-                          <li><a href="#!"><i className="material-icons">delete</i>Delete</a>
+                          <li><Link to="#!"><i className="material-icons">delete</i>Delete</Link>
                           </li>
-                          <li><a href="#!"><i className="material-icons">subject</i>View All</a>
+                          <li><Link to="#!"><i className="material-icons">subject</i>View All</Link>
                           </li>
                         </ul>
                         {/* Dropdown Structure */}
@@ -81,181 +81,181 @@ export default class Offers extends Component{
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="Offers_edit"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                               <tr>
                                 <td><span className="list-img"><img src="images/listing/1.jpeg" alt="" /></span>
                                 </td>
-                                <td><a href="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></a>
+                                <td><Link to="#"><span className="list-enq-name">Domestic Help Services</span><span className="list-enq-city">Illunois, United States</span></Link>
                                 </td>
                                 <td>50%</td>
                                 <td>18 may, 2018</td>
                                 <td>Australia</td>
                                 <td>
-                                  <a href="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></a>
+                                  <Link to="offers-edit.html"><i className="fa fa-pencil-square-o" aria-hidden="true" /></Link>
                                 </td>
                                 <td>
-                                  <a href="#"><i className="fa fa-trash-o" aria-hidden="true" /></a>
+                                  <Link to="#"><i className="fa fa-trash-o" aria-hidden="true" /></Link>
                                 </td>
                               </tr>
                             </tbody>

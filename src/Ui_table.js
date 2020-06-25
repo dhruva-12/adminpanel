@@ -15,11 +15,9 @@ export default class Ui_table extends Component{
     return (
       <div>
         
-        
-        {/*== MAIN CONTRAINER ==*/}
         <div className="container-fluid sb1">
           <div className="row">
-            {/*== LOGO ==*/}
+            
           <Notifysearch></Notifysearch>
           <Drop></Drop>
           </div>
@@ -34,7 +32,7 @@ export default class Ui_table extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="#"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="#"><i className="fa fa-home" aria-hidden="true" /> Home</Link>
                   </li>
                   <li className="active-bre"><a href="#"> Ui Form</a>
                   </li>

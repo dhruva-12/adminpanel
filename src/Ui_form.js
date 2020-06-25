@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './css/style.css';
 
-//import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import './css/materialize.css';
 import './css/mob.css';
 import './css/bootstrap.css';
@@ -35,9 +35,9 @@ export default class Ui_form extends Component{
             <div className="sb2-2">
               <div className="sb2-2-2">
                 <ul>
-                  <li><a href="#"><i className="fa fa-home" aria-hidden="true" /> Home</a>
+                  <li><Link to="#"><i className="fa fa-home" aria-hidden="true" /> Home</Link>
                   </li>
-                  <li className="active-bre"><a href="#"> Ui Form</a>
+                  <li className="active-bre"><Link to="#"> Ui Form</Link>
                   </li>
                 </ul>
               </div>
